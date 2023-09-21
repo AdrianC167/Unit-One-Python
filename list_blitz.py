@@ -36,13 +36,19 @@ print(list)
 # i first selected index number 3 in the list and then changed it to 3 and then printed it
 
 """
-Task 5: Append Multiple Elements to a List
+Task 5: Append Multiple Elements to the List
 Append multiple elements to the end of the list. Print 
 the updated list.
 """
-list2 = [4,5,6,7,8]
-list3 = list + list2
+
+list.append(4)
+list.append(5)
+list.append(6)
+list.append(7)
+list.append(8)
+list3 = list
 print(list3)
+
 
 #i first made a new list and then made a third list that adds both them together and printed that new list
 """
