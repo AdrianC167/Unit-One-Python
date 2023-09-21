@@ -50,7 +50,7 @@ list3 = list
 print(list3)
 
 
-#i first made a new list and then made a third list that adds both them together and printed that new list
+#since i cant add multiple values at once i did some repitition and appended like 5 values and then made list3 equal to list because mr forlenza made me change some stuff and then i printed list3
 """
 Task 6: Delete Element at a Specific Index
 Delete an element at a specific index. Print the updated 
