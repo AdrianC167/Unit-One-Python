@@ -94,7 +94,7 @@ side3 = float(input("Enter sidelength for side 3: "))
 
 if side1 == side2 and side1 == side3:
     print("it is a equilateral triangle")
-elif side1 == side2 and side1 != side3 or side2 == side3 and side2 != side1:
+elif side1 == side2 and side1 != side3 or side2 == side3 and side2 != side1 or side1 == side3 and side1 != side2:
     print("It is an isosceles triangle")
 elif side1 != side2 or side1 != side3:
     print("This is a scalene triangle")
