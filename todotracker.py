@@ -3,7 +3,8 @@ todos = []
 #i imported sleep so i can use later on for delay on the else statement
 import time
 t = 2
-
+#i made this variable to read the number of items in the todo list so i can check if they try to delete anything while nothing is in the list
+num = int(len(todos))
 
 
 #notes:i tried the first time but it didnt work since i needed a variable to make it easier and i also needed to make it a string since it didnt work
@@ -33,24 +34,34 @@ while True:
         print("")
     #im an elif for when function is equal to remove so i can then delete stuff from the list.
     elif func == "remove":
-        print("")
-        #i made a variable so that i could ask for a integer input of the number they wish to remove.
-        delete = int(input("Please select the number you wish to delete: "))
-        #i made a if statement which will check if the number inputted is less than 0 or equal to it and if it is then it give return an error
-        if delete <= 0:
-               print("")
-               print("please enter a whole number greater than 0")
-               print("")
-               print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-               time.sleep(t)
-        else:
-            index = int(delete - 1)
-            #i then delete the input they put in and add 2 empty spaces
-            del todos[index] 
+        print("") 
+        #i add this here again so that it would be part of the loop and reread the todos number
+        num = int(len(todos))      
+        #i added a if statement so that if there is nothing in the list then the command will not run and give an error
+        if num <= 0:
             print("")
+            print("you have nothing in the list yet")
             print("")
+            time.sleep(1)
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-            print("")
+        else:
+            #i made a variable so that i could ask for a integer input of the number they wish to remove.
+            delete = int(input("Please select the number you wish to delete: "))
+            #i made a if statement which will check if the number inputted is less than 0 or equal to it and if it is then it give return an error
+            if delete <= 0:
+                print("")
+                print("please enter a whole number greater than 0")
+                print("")
+                print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                time.sleep(t)
+            else:
+                index = int(delete - 1)
+                #i then delete the input they put in and add 2 empty spaces
+                del todos[index] 
+                print("")
+                print("")
+                print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                print("")
     #the else statement is just for when someone enters the wrong inputs
     else:
         print("")
