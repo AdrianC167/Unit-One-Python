@@ -60,9 +60,21 @@ while password != "guess":
 5. Sum of Digits:
 Write a program that calculates the sum of the digits of a given number using a while loop.
 """
-
+#i made two variables that takes interger inputs
+x = int(input("enter a number: "))
+y = int(input("enter another number: "))
+#i then made a while loop that would always run and printed the sum of x and y and then would break
+while True:
+    print(x+y)
+    break
 
 """
 6. Fibonacci Series:
 Write a program that prints the first n numbers in the Fibonacci sequence using a while loop.
 """
+
+num = 1
+num2 = 0
+while True:
+    num2 = num + num2
+    
