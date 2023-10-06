@@ -32,7 +32,7 @@ while True:
         print("")
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("")
-    #im an elif for when function is equal to remove so i can then delete stuff from the list.
+    #an elif for when function is equal to remove so i can then delete stuff from the list.
     elif func == "remove":
         print("") 
         #i add this here again so that it would be part of the loop and reread the todos number
