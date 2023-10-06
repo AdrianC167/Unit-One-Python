@@ -73,8 +73,9 @@ while True:
 Write a program that prints the first n numbers in the Fibonacci sequence using a while loop.
 """
 
-num = 1
-num2 = 0
+num = 0
+num2 = 1
 while True:
     num2 = num + num2
     
+
