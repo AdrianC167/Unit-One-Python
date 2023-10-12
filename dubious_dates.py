@@ -32,8 +32,11 @@ data2 = "12/17/3100"
 #created a format using month/day/year
 format = "%m/%d/%Y"
 
+#made time variable and set it equal to the datetime.strptime which takes data and puts it in the format variable i made the previous line
 time = datetime.datetime.strptime(data, format)
+#seperate variable for both datas since it wont work together
 time2 = datetime.datetime.strptime(data2, format)
+#print the difference of time2 and time
 print(time2 - time)
 
 """
@@ -41,5 +44,14 @@ Excercise 4:
 Write a program that asks the user for their birthdate and calculates their current 
 age using the datetime module.
 """
-
+#i first made an input value and set it to bday
+bday = input("What is your birthday?(Enter in month/day/year format): ")
+#made x and set it todatetime.datetime.now which gets the current time
+x = datetime.datetime.now()
+#created format and set as a variable
+format = "%m/%d/%Y"
+#used strptime to format bday into time
+bday = datetime.datetime.strptime(bday, format)
+#print out the difference between current time and bday and print out bday
+print("you are currently" + str(x - bday)+ " hours old.")
 
